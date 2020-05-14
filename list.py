@@ -46,7 +46,7 @@ for image in images_to_click:
     
     clean_source = None    
     for big_image in big_images:
-        for i in range(5):
+        for i in range(20):
             src = big_image.get_attribute("src")
             if src.startswith("http") and not "://encrypted" in src:
                 clean_source = src
