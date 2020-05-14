@@ -9,7 +9,7 @@ end_element_class_name = "Yu2Dnd"
 get_more_results_button_class_name = "mye4qd"
 
 # picture preview class name
-big_picture_on_the_left_class_name = "n3VNCb"
+big_picture_on_the_right_class_name = "n3VNCb"
 
 start_url = "https://www.google.com/search?q=Python&hl=en&source=lnms&tbm=isch&sa=X"
 
@@ -42,7 +42,7 @@ for image in images_to_click:
     image.location_once_scrolled_into_view
     image.click()
     sleep (0.1)
-    big_images = driver.find_elements_by_class_name(big_picture_on_the_left_class_name)
+    big_images = driver.find_elements_by_class_name(big_picture_on_the_right_class_name)
     
     clean_source = None    
     for big_image in big_images:
